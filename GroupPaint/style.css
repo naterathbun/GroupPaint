@@ -1,30 +1,55 @@
-html{
-
+html {
 }
-body{
 
+body {
 }
-header{
 
+header {
 }
-#main{
 
+table {
+    border-collapse: collapse;
+    background-color: black;
 }
-#colorPalette{
 
+td {
+    height: 10px;
+    width: 13px;
 }
-#canvas{
 
+#main {
 }
-.pixel{
 
+#colorPalette {
+    text-align: center;
+    border-radius: 20px;
+    margin: 0px 0px 10px 0px;
+    border: 2px solid black;
+    height: 120px;
+    width: 650px;
 }
-.blank{
 
+#canvas {
+    border: 2px solid black;
+    width: 640px;
 }
-.brushColor{
 
+.pixel {
 }
-.selectedColor{
 
+.blank {
+    background-color: white;
 }
+
+.brushColor {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin: 20px 8px;
+}
+.selectedColor {
+    border: 5px solid gray;
+}
+

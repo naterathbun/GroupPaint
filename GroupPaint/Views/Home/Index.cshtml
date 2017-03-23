@@ -7,23 +7,24 @@
 <head>
     <meta charset="utf-8" />
     <title>Group Paint</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="~/style.css" rel="stylesheet" />
 </head>
 <body>
     <div id="main">
         <div id="colorPalette">
-            <div id="blackBrush" class="brushColor selectedColor"></div>
-            <div id="whiteBrush" class="brushColor"></div>
-            <div id="redBrush" class="brushColor"></div>
-            <div id="blueBrush" class="brushColor"></div>
-            <div id="greenBrush" class="brushColor"></div>
+            <div class="brushColor selectedColor" style="background-color: black"></div>
+            <div class="brushColor" style="background-color: white"></div>
+            <div class="brushColor" style="background-color: red"></div>
+            <div class="brushColor" style="background-color: blue"></div>
+            <div class="brushColor" style="background-color: green"></div>
+            <div class="brushColor" style="background-color: yellow"></div>
         </div>
         <div id="canvas">
             <table>
-                @for (var row = 0; row < 100; row++)
+                @for (var row = 0; row < 50; row++)
                 {
                     <tr>
-                        @for (var col = 0; col < 100; col++)
+                        @for (var col = 0; col < 50; col++)
                         {
                             <td class="pixel blank" data-row="@row" data-col="@col"></td>
                         }
@@ -31,8 +32,7 @@
             </table>
         </div>
     </div>
-
-    <script src="Scripts/jquery-3.1.1.js"></script>
-    <script src="script.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/script.js"></script>
 </body>
 </html>
