@@ -11,7 +11,7 @@ namespace GroupPaint
     public class GroupPaintConnection : PersistentConnection
     {
         public static HashSet<string> ConnectedUsers = new HashSet<string>();
-        public static string[,] Map = new string[10,10];
+        public static string[,] Map = new string[50,50];
         
         protected override Task OnConnected(IRequest request, string connectionId)
         {
