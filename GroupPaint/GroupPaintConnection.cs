@@ -44,7 +44,7 @@ namespace GroupPaint
 
             if (ConnectedUsers.Count == 0)
             {
-                Map = new string[10, 10];
+                Map = new string[50, 50];
             }
 
             return base.OnDisconnected(request, connectionId, stopCalled);
